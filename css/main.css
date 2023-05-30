@@ -15,7 +15,7 @@ h6 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode'; }
 
 
-.container {
+.wrapper {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
