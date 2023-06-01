@@ -33,7 +33,7 @@ img {
 }
 
 .topnav{
-  background-color: #07166b;
+  background-color: #000000;
   color: #FBF8BE;
 }
 
@@ -96,9 +96,9 @@ form button {
 }
 
 .backtotop {
+
   margin-top: 30px;
   text-align: right;
-position:static;
 opacity: 0.7;
 }
 
