@@ -6,50 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accessible Me</title>
+  <link rel="stylesheet" href="css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 </head>
-  
+
 <body>
   <div class="wrapper">
-   <header role="banner">
+    <header role="banner">
       <h1>Jam Box Studios</h1>
-      <nav class="topnav" role="navigation">     
-           <ul role="list">
-          <li><a href="#" aria-label="Jump to Home page" id="home">Home</a></li>
-          <li><a href="#" aria-label="Jump to Products page">Products</a></li>
-          <li><a href="#" aria-label="Jump to Reservation page">Reservation</a></li>
-          <li><a href="#" aria-label="Jump to Studio">Studio</a></li?
+      <nav class="topnav" role="navigation">
+        <ul role="list">
+          <li><a href="#" id="home" aria-label="Jump to Home page">Home</a></li>
+          <li><a href="#pro" aria-label="Jump to Products page">Products</a></li>
+          <li><a href="#reserve" aria-label="Jump to Reservation page">Reservation</a></li>
+          <li><a href="#add" aria-label="Jump to Studio">Studio</a></li>
         </ul>
       </nav>
       <img src="https://placekitten.com/1200/900" class="banner" alt="A kitten picture." role="img">
     </header>
-    <main role="main" id="maincontent">  
-      <section role="region">   
-       <h2>Welcome to Jam Box</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-    </section>
+    <main role="main" id="maincontent">
       <section role="region">
-        <h2>Meet the owner</h2>
-        <ul role="list">
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <h2>Welcome to Jam Box</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa
+          eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio
+          quia veritatis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam
+          omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto
+          error voluptatibus.</p>
+      </section>
+      <section role="region">
+        <h2  id="pro">Meet the owner</h2>
+        <ul itemscope itemtype="https://schema.org/Person" role="list">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
-        <h3>Address</h3>
-        <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+        <h3 id="add">Address</h3>
+        <p itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="legalName">Jambox Studios</span><br>
+          <span itemprop="streetAddress">123 Guitar Road,</span><br>
+          <span itemprop="addressRegion">Musicville, Danceistan</span><br>
+          <span itemprop="postalCode">B3T 0L0</span>
         </p>
       </section>
       <section role="region">
-        <h1>Contact Us</h1>
+        <h1 id="reserve">Contact Us</h1>
         <form action="thanks.html" role="form">
           <label>Full Name</label>
           <input type="text" placeholder="Full Name">
@@ -62,7 +71,10 @@
           <button type="submit" role="button">Send</button>
         </form>
       </section>
-      <button type="button" role="button" class="backtotop"><a href="#home"> Back to top</button></a>
+      <div class="backtotop">
+        <a href="#home">
+          <i class="fa-solid fa-circle-chevron-up fa-2xl" style="color: #07166b;"></i></a>
+      </div>
     </main>
     <footer role="contentinfo">
       &copy; 2021 Jam Box Studios

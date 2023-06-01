@@ -1,9 +1,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: beige;
+  background-color: #FBF8BE;
+  line-height: 1.4rem;
   margin: 0;
   padding: 0;
-  
+
 }
 
 h1,
@@ -12,7 +13,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode'; }
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  color: rgb(0, 0, 0);
+}
+
+h1{
+  padding: 15px;
+}
 
 
 .wrapper {
@@ -25,12 +32,17 @@ img {
   width: 100%;
 }
 
+.topnav{
+  background-color: #07166b;
+  color: #FBF8BE;
+}
+
 .topnav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 1.2rem;
+  padding:1rem 0;
 }
 
 .topnav ul li {
@@ -43,6 +55,17 @@ img {
   color: inherit;
   text-decoration: none;
   font-size: 1.3rem;
+  
+}
+ .topnav ul li a:hover{
+color: aliceblue;
+
+ }
+
+form input {
+
+  border-radius: 55px;
+
 }
 
 form input,
@@ -51,6 +74,10 @@ form textarea {
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 0.1px solid lightgray;
+  opacity: 0.4;
 }
 
 form textarea {
@@ -58,6 +85,7 @@ form textarea {
   max-height: 150px;
   height: 150px;
   resize: none;
+  padding: 1px;
 }
 
 form button {
@@ -66,17 +94,14 @@ form button {
   padding: 1rem;
   text-transform: uppercase;
 }
-.backtotop{
-  margin-top: 10px;
- border: 0;
- text-align: right;
-border-radius: 500px;
 
+.backtotop {
+  margin-top: 30px;
+  text-align: right;
+position:static;
+opacity: 0.7;
 }
-.backtotop a{
-  text-decoration: none;
-  color: grey;
-}
+
 
 footer {
   font-size: 0.7em;
